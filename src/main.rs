@@ -5,7 +5,7 @@
 use rand::{thread_rng, Rng};
 use rand::distributions::Alphanumeric;
 
-pub fn main() {
+ fn main() {
     let password: String = thread_rng()
         .sample_iter(&Alphanumeric)
         .take(64)
